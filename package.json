@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "name": "my-turborepo-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx ts-node apps/my-app/index.ts",
+    "start2": "ts-node -r tsconfig-paths/register apps/my-app/index.ts"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.3",
+    "turbo": "^1.11.2"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "_moduleAliases": {
+    "@module": "./packages/module/my-lib/src"
+  }
+}
