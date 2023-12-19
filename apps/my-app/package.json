@@ -4,7 +4,8 @@
   "main": "index.ts",
   "license": "MIT",
   "dependencies": {
-    "@mycompany/my-lib": "*",
+    "@types/lodash": "^4.14.202",
+    "lodash": "^4.17.21",
     "module-alias": "^2.2.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"

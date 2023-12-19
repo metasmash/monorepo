@@ -1,9 +1,19 @@
 {
-  "extends": "./tsconfig.build.json",
   "compilerOptions": {
-    "baseUrl": ".",
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noEmitOnError": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "types": [],
+    "baseUrl": "./",
     "paths": {
-      "@mycompany/my-lib": ["packages/my-lib/src/*"]
+      "@my-lib/*": ["packages/my-lib/src/*"],
+      "@my-app/*": ["apps/my-app/*"]
     },
     "noEmit": true
   }

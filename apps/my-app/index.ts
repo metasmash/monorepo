@@ -1,6 +1,9 @@
 // index.ts
-import { greet } from '@mycompany/my-lib';
-import {otherFunction} from '@mycompany/my-lib/src/helpers';
+import { greet } from "@my-lib/index";
+import { otherFunction } from "@my-lib/helpers";
+import { cloneDeep } from "lodash";
 
-console.log(greet('World'));
-otherFunction()
+const a = { a: 42 };
+const b = cloneDeep(a);
+console.log(greet("b"));
+otherFunction();

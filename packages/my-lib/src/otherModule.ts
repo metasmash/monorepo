@@ -1,14 +1,14 @@
-import helpers from "@module/helpers";
+import helpers from "@my-lib/helpers";
 
 export const circular1 = () => {
-    return
-}
+  return;
+};
 
 export const circular3 = () => {
-    return helpers.circular4()
-}
+  return helpers.circular4();
+};
 
 export default {
-    circular1,
-    circular3
-}
+  circular1,
+  circular3,
+};

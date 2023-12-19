@@ -10,13 +10,7 @@
   },
   "dependencies": {
     "module-alias": "^2.2.3",
-    "turbo": "^1.11.2"
-  },
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
-  "_moduleAliases": {
-    "@module": "./packages/module/my-lib/src"
+    "turbo": "^1.11.2",
+    "typescript": "^5.3.3"
   }
 }
